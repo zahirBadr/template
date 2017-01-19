@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mouldifi - A fully responsive, HTML5 based admin theme">
+<meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, Mouldifi, web design, CSS3">
+<title>Profile</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/ajax.js"></script>
+
+<!-- Site favicon -->
+<link rel='shortcut icon' type='image/x-icon' href='images/shootShare.ico' />
+<!-- /site favicon -->
+
+<!-- Entypo font stylesheet -->
+<link href="css/entypo.css" rel="stylesheet">
+<!-- /entypo font stylesheet -->
+
+<!-- Font awesome stylesheet -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- /font awesome stylesheet -->
+
+<!-- Bootstrap stylesheet min version -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- /bootstrap stylesheet min version -->
+
+<!-- Mouldifi core stylesheet -->
+<link href="css/mouldifi-core.css" rel="stylesheet">
+<!-- /mouldifi core stylesheet -->
+
+<link href="css/mouldifi-forms.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!--<script type="text/javascript">
+
+	$(document).ready(function() 
+	{
+	    $("#profile").click(function() 
+	    {
+	                $.ajax({
+	                  url : '',
+	                  type : 'Get',
+	                  cache : false,
+	                  contentType : false,
+	                  processData : false,
+	                  dataType: 'JSON',
+	                  success : function(data, textStatus, jqXHR) {
+	                        
+	                        $("#firstname").val(data.firstname);
+	                        $("#lastname").val(data.lastname);
+	                        $("#email").val(data.email);
+	                  },
+	                  error : function(jqXHR, textStatus, errorThrown) {
+	                        $("#messages").append("<li style='color: red;'>" + "erreur" + "</li>");
+	                  }
+	                });
+	    });
+
+	    $("#validat").click(function() 
+	    {
+	    	var firstname = $("#firstname").val();
+       		var lastname = $("#lastname").val();
+      		var email = $("#email").val();
+
+      		var sendInfo = {
+           		firstname: firstname,
+           		lastname: lastname,
+           		email: email
+       						};
+
+	                $.ajax({
+	                  url : '',
+	                  type : 'Put',
+	                  cache : false,
+	                  contentType : false,
+	                  processData : false,
+	                  dataType: 'JSON',
+	                  data: sendInfo,
+	                  success : function(data, textStatus, jqXHR) {
+	                        $("#messages").append("<li style='color: green;'>" + data + "</li>");	                        
+	                  },
+	                  error : function(jqXHR, textStatus, errorThrown) {
+	                        $("#messages").append("<li style='color: red;'>" + "erreur" + "</li>");
+	                  }
+	                });
+	    });
+
+	});
+
+
+</script>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ... -->
+</head>
+
+<body>
+<!-- ... -->
+
+<!-- Page container -->
+<div class="page-container">
+
+  <!-- Page Sidebar -->
+  <div id="menu" class="page-sidebar">
+  
+  	  	  		<!-- Site header  -->
+		<header class="site-header">
+		  <div class="site-logo"><a href="#"><img src="images/shootShare.png" width="50" height="50" alt="Shoot Share" title="Shoot Share"><h4>   <b> Shoot Share</b></h4></a></div>
+		  <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
+		  <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
+		</header>
+		<!-- /site header -->
+		
+		<!-- Main navigation -->
+		<ul id="side-nav" class="main-menu navbar-collapse collapse">
+			<li class="has-sub active "><a href="index.html"><i class="icon-layout"></i><span class="title">ALL Files</span></a>
+				<ul class="nav">
+					<li><a href="myFiles.html" id="myFiles"><span class="title">My files </span></a></li>
+					<li><a href="withFreinds.html" id="withFreinds"><span class="title">With freinds </span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Share Files</span></a>
+				<ul class="nav collapse">
+					<li><a href="upload.html" id="upload"><span class="title">Upload files</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Shared Files</span></a>
+				<ul class="nav collapse">
+					<li><a href="photo.html" id="photo"><span class="title">Photos</span></a></li>
+					<li><a href="video.html" id="video"><span class="title">Videos</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="panels.html"><i class="icon-newspaper"></i><span class="title">Friends</span></a>
+				<ul class="nav collapse">
+					<li><a href="freinds.html"><span class="title">List of freinds</span></a></li>
+				</ul>
+			</li>
+		</ul>
+		<!-- /main navigation -->
+
+  </div>
+  <!-- /page sidebar -->
+  
+  <!-- Main container -->
+  <div class="main-container">
+  
+	<!-- Main header -->
+    <div class="main-header row">
+      <div class="col-sm-6 col-xs-7">
+	  
+		<!-- User info -->
+        <ul class="user-info pull-left">          
+          <li class="profile-info dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg">John Henderson <span class="caret"></span></a>
+		  
+			<!-- User action menu -->
+            <ul class="dropdown-menu">             
+              <li><a href="profile.html" id="profile"><i class="icon-user"></i>My profile</a></li>
+			  <li class="divider"></li>
+			  <li><a href="login.html"><i class="icon-logout"></i>Logout</a></li>
+            </ul>
+			<!-- /user action menu -->
+			
+          </li>
+        </ul>
+		<!-- /user info -->
+		
+      </div>
+	  
+    </div>
+	<!-- /main header -->
+	
+	<!-- Main content -->
+	<div class="main-content">
+		<h1 class="page-title">Profile</h1>
+		<br><br>
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<h3 class="panel-title">User information</h3>
+					</div>
+
+					<div class="panel-body">
+						 <form class="form-horizontal">
+						
+						 <div class="form-group"> 
+								<div class="col-sm-10"> 
+									<a href="#" aria-expanded="false" data-toggle="modal" data-target="#modal-1"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg"> &nbsp;John Henderson</a>
+								</div> 
+							</div>
+							<div class="line-dashed"></div>
+							 <div class="form-group">
+								<label class="col-sm-2 control-label">First name</label>
+                                <div class="col-sm-6">
+									<input id="firstname" type="text" class="form-control" placeholder="Placeholder" disabled="true"> 
+                                </div>
+                             </div>
+							 <div class="line-dashed"></div>
+							 <div class="form-group">
+								<label class="col-sm-2 control-label">Last name</label>
+                                <div class="col-sm-6">
+									<input id="lastname" type="text" class="form-control" placeholder="Placeholder" disabled="true"> 
+                                </div>
+                             </div>
+							 <div class="line-dashed"></div>
+							 <div class="form-group">
+								<label class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-6">
+									<input id="email" type="text" class="form-control" placeholder="Placeholder" disabled="true"> 
+                                </div>
+                             </div>
+                             </form>
+							 <div class="line-dashed"></div>
+							<div class="form-group"> 
+								<div class="col-sm-offset-2 col-sm-10"> 
+									<input id="update" name="update" value="Update" class="btn btn-default" type="submit" onclick="input_submit(document.getElementsByName('update')[0].getAttribute('id'))"/>
+								</div> 
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+				<!--Basic Modal-->
+		<div id="modal-1" class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Upload your profile photo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <input name="upload" value="Upload" type="file" class="btn">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!--End Basic Modal-->
+
+		<br><br><br><br><br>
+		
+		<!-- Footer -->
+		<footer class="footer-main"> 
+			
+		</footer>	
+		<!-- /footer -->
+		
+	  </div>
+	  <!-- /main content -->
+	  
+  </div>
+  <!-- /main container -->
+  
+</div>
+<!-- /page container -->
+
+<!--Load JQuery-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metismenu/jquery.metisMenu.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function input_submit(id){
+		if(id == "update"){
+			activer();
+		}
+		
+		if(id == "validat"){
+			desactiver();
+		}
+
+	}
+
+
+	function activer(){
+		document.getElementById('firstname').disabled = false;
+		document.getElementById('lastname').disabled = false;
+		document.getElementById('email').disabled = false;
+		document.getElementById('update').value= "Validat";
+		document.getElementById('update').setAttribute('id', 'validat');
+	}
+
+	function desactiver(){
+		document.getElementById('firstname').disabled = true;
+		document.getElementById('lastname').disabled = true;
+		document.getElementById('email').disabled = true;
+		document.getElementById('validat').value= "Update";
+		document.getElementById('validat').setAttribute('id', 'update');
+	}
+</script>

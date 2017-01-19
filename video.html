@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mouldifi - A fully responsive, HTML5 based admin theme">
+<meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, Mouldifi, web design, CSS3">
+<title>Videos</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/ajax.js"></script>
+
+<!-- Site favicon -->
+<link rel='shortcut icon' type='image/x-icon' href='images/shootShare.ico' />
+<!-- /site favicon -->
+
+<!-- Entypo font stylesheet -->
+<link href="css/entypo.css" rel="stylesheet">
+<!-- /entypo font stylesheet -->
+
+<!-- Font awesome stylesheet -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- /font awesome stylesheet -->
+
+<!-- Bootstrap stylesheet min version -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- /bootstrap stylesheet min version -->
+
+<!-- Mouldifi core stylesheet -->
+<link href="css/mouldifi-core.css" rel="stylesheet">
+<!-- /mouldifi core stylesheet -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<!-- Page container -->
+<div class="page-container">
+
+  <!-- Page Sidebar -->
+  <div class="page-sidebar">
+  
+  		<!-- Site header  -->
+		<header class="site-header">
+		  <div class="site-logo"><a href="#"><img src="images/shootShare.png" width="50" height="50" alt="Shoot Share" title="Shoot Share"><h4>   <b> Shoot Share</b></h4></a></div>
+		  <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
+		  <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
+		</header>
+		<!-- /site header -->
+		
+		<!-- Main navigation -->
+		<ul id="side-nav" class="main-menu navbar-collapse collapse">
+			<li class="has-sub active "><a href="index.html"><i class="icon-layout"></i><span class="title">ALL Files</span></a>
+				<ul class="nav">
+					<li><a href="myFiles.html" id="myFiles"><span class="title">My files </span></a></li>
+					<li><a href="withFreinds.html" id="withFreinds"><span class="title">With freinds </span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Share Files</span></a>
+				<ul class="nav collapse">
+					<li><a href="upload.html" id="upload"><span class="title">Upload files</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Shared Files</span></a>
+				<ul class="nav collapse">
+					<li><a href="photo.html" id="photo"><span class="title">Photos</span></a></li>
+					<li><a href="video.html" id="video"><span class="title">Videos</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub"><a href="panels.html"><i class="icon-newspaper"></i><span class="title">Friends</span></a>
+				<ul class="nav collapse">
+					<li><a href="freinds.html"><span class="title">List of freinds</span></a></li>
+				</ul>
+			</li>
+		</ul>
+		<!-- /main navigation -->		
+  </div>
+  <!-- /page sidebar -->
+  
+  <!-- Main container -->
+  <div class="main-container">
+  
+	<!-- Main header -->
+    <div class="main-header row">
+      <div class="col-sm-6 col-xs-7">
+	  
+		<!-- User info -->
+        <ul class="user-info pull-left">          
+          <li class="profile-info dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> <img width="44" class="img-circle avatar" alt="" src="images/man-3.jpg">John Henderson <span class="caret"></span></a>
+		  
+			<!-- User action menu -->
+			<ul class="dropdown-menu">             
+              <li><a href="profile.html" id="profile"><i class="icon-user"></i>My profile</a></li>
+			  <li class="divider"></li>
+			  <li><a href="login.html"><i class="icon-logout"></i>Logout</a></li>
+            </ul>
+			<!-- /user action menu -->
+			
+          </li>
+        </ul>
+		<!-- /user info -->
+		
+      </div>
+	  
+      <div class="col-sm-6 col-xs-5">
+	  	<div class="pull-right">
+			<!-- User alerts -->
+			
+			<!-- /user alerts -->
+			
+		</div>
+      </div>
+    </div>
+	<!-- /main header -->
+	
+	<!-- Main content -->
+	<div class="main-content">
+		<h1 class="page-title">Videos</h1>
+		<div class="row">		
+			<div class="col-md-12">
+			
+				<!-- Card grid view -->
+				<div class="cards-container box-view grid-view">
+					<div class="row">										
+						<div class="col-lg-4 col-sm-8 ">
+						
+							<!-- Card -->
+							<div class="card">
+							
+								<!-- Card header -->
+								<div class="card-header">
+									<div class="card-photo">
+										<img class="img-circle avatar" src="images/man-3.jpg" alt="John Smith" title="John Smith">
+									</div>
+									<div class="card-short-description">
+										<h5><span class="user-name"><a href="#/">John Smith</a></span></h5>
+										<a href="#"><i class="icon-cog"></i><small>confidentiality</small>
+									</div>
+								</div>
+								<!-- /card header -->
+								
+								<!-- Card content -->
+								<div class="card-content">
+									<a href="#"><object width="250" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k" class="center"></object></a>
+								</div>
+								<!-- /card content -->
+								
+								<!-- Card footer -->
+								<div class="card-footer clearfix">
+									<ul class="list-inline">
+										<p>Name</p>
+										<li><p>17 janvier 2017</p></li>
+										<li class="pull-right"><a href="#/"><i class="icon-trash"></i></a></li>
+										<li class="pull-right"><a href="#"><i class="icon-download"></i></a></li>
+									</ul>
+								</div>
+								<!-- /card footer -->
+								
+							</div>
+							<!-- /card -->
+							
+						</div>
+						<div class="col-lg-4 col-sm-8 ">
+						
+							<!-- Card -->
+							<div class="card" >
+							
+								<!-- Card header -->
+								<div class="card-header">
+									<div class="card-photo">
+										<img class="img-circle avatar" src="images/man-3.jpg" alt="John Smith" title="John Smith">
+									</div>
+									<div class="card-short-description">
+										<h5><span class="user-name"><a href="#/">John Smith</a></span></h5>
+										<a href="#"><i class="icon-cog"></i><small>confidentiality</small>
+									</div>
+								</div>
+								<!-- /card header -->
+								
+								<!-- Card content -->
+								<div class="card-content">
+									<a href="#"><object width="250" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k" class="center"></object></a>
+								</div>
+								<!-- /card content -->
+								
+								<!-- Card footer -->
+								<div class="card-footer clearfix">
+									<ul class="list-inline" >
+										<p>Name</p>
+										<li><p>17 janvier 2017</p></li>
+										<li class="pull-right"><a href="#/"><i class="icon-trash"></i></a></li>
+										<li class="pull-right"><a href="#"><i class="icon-download"></i></a></li>
+									</ul>
+								</div>
+								<!-- /card footer -->
+								
+							</div>
+							<!-- /card -->
+							
+						</div>
+						
+			</div>
+		</div>
+		</div>
+		</div>	
+		<!-- Footer -->
+		<footer class="footer-main"> 
+			
+		</footer>	
+		<!-- /footer -->
+		
+	  </div>
+	  <!-- /main content -->
+	  
+  </div>
+  <!-- /main container -->
+  
+</div>
+<!-- /page container -->
+
+<!--Load JQuery-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metismenu/jquery.metisMenu.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>
